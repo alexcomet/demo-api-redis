@@ -4,8 +4,8 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:
-    run: demo-api-redis
-  name: demo-api-redis
+    run: demo-api
+  name: demo-api
   selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/demo-api
 spec:
   replicas: 1
@@ -18,9 +18,9 @@ spec:
         run: demo-api
     spec:
       containers:
-      - image: alexcomet/demo-api-redis:latest
+      - image: alexcomet/demo-api:latest
         imagePullPolicy: Always
-        name: demo-api-redis
+        name: demo-api
         ports:
         - containerPort: 9000
           protocol: TCP
