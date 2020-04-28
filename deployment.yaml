@@ -6,7 +6,7 @@ metadata:
   labels:
     run: demo-api
   name: demo-api
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/demo-api
+  selfLink: /apis/apps/v1/namespaces/default/deployments/demo-api
 spec:
   replicas: 1
   selector:
